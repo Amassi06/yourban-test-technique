@@ -16,7 +16,7 @@ export const getMovies = async():Promise<Movie[]>=>{
 }
 
 //CREATE
-export const createMovie=async(movieData:Movie):Promise<Movie>=>{
+export const createMovie = async(movieData:Movie):Promise<Movie>=>{
     const movies = await getMovies();
 
     const maxId = movies.length >0?Math.max(...movies.map(m=>m.id)):0;
