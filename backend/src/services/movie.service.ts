@@ -15,4 +15,19 @@ export const getMovies = async():Promise<Movie[]>=>{
     return JSON.parse(data);     
 }
 
+//CREATE
+export const createMovie=async(movieData:Movie):Promise<Movie>=>{
+    const movies = await getMovies();
+
+    const maxId = movies.length >0?Math.max(...movies.map(m=>m.id)):0;
+    const nextId = maxId+1;
+    const newMovie:Movie = {
+        ...movieData,
+        id:nextId
+    };
+
+    movies.push(newMovie);
+    await fs.writeFile(DATA_PATH,JSON.stringify(movies,null,2),'utf-8');
+    return newMovie;
+}
 
