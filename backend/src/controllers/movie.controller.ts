@@ -26,7 +26,9 @@ export const getAllMovies = async (_req:Request, res:Response)=>{
 };
 
 export const createMovie = async(req:Request, res:Response)=>{
-    try{
+   
+        if (!req.body || Object.keys(req.body).length === 0) return;
+
         const { error, value } = movieSchema.validate(req.body);
         if(error){
             res.status(400).json({

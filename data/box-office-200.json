@@ -189,7 +189,7 @@
     "pays_origine": "Belgique",
     "distributeur": "Gaumont",
     "duree_minutes": 159,
-    "note_presse": 4.0
+    "note_presse": 4
   },
   {
     "id": 17,
@@ -225,7 +225,7 @@
     "pays_origine": "Inde",
     "distributeur": "Universal",
     "duree_minutes": 166,
-    "note_presse": 8.0
+    "note_presse": 8
   },
   {
     "id": 20,
@@ -273,7 +273,7 @@
     "pays_origine": "Allemagne",
     "distributeur": "Universal",
     "duree_minutes": 82,
-    "note_presse": 5.0
+    "note_presse": 5
   },
   {
     "id": 24,
@@ -669,7 +669,7 @@
     "pays_origine": "Allemagne",
     "distributeur": "Disney",
     "duree_minutes": 204,
-    "note_presse": 7.0
+    "note_presse": 7
   },
   {
     "id": 57,
@@ -1221,7 +1221,7 @@
     "pays_origine": "Danemark",
     "distributeur": "Netflix Films",
     "duree_minutes": 146,
-    "note_presse": 6.0
+    "note_presse": 6
   },
   {
     "id": 103,
@@ -1257,7 +1257,7 @@
     "pays_origine": "Inde",
     "distributeur": "A24",
     "duree_minutes": 172,
-    "note_presse": 9.0
+    "note_presse": 9
   },
   {
     "id": 106,
@@ -1677,7 +1677,7 @@
     "pays_origine": "Mexique",
     "distributeur": "Blumhouse",
     "duree_minutes": 163,
-    "note_presse": 9.0
+    "note_presse": 9
   },
   {
     "id": 141,
@@ -1941,7 +1941,7 @@
     "pays_origine": "Italie",
     "distributeur": "Blumhouse",
     "duree_minutes": 202,
-    "note_presse": 5.0
+    "note_presse": 5
   },
   {
     "id": 163,
@@ -2025,7 +2025,7 @@
     "pays_origine": "Mexique",
     "distributeur": "Gaumont",
     "duree_minutes": 162,
-    "note_presse": 6.0
+    "note_presse": 6
   },
   {
     "id": 170,
@@ -2398,5 +2398,34 @@
     "distributeur": "Gaumont",
     "duree_minutes": 98,
     "note_presse": 4.7
+  },
+  {
+    "id": 201
+  },
+  {
+    "id": 202
+  },
+  {
+    "id": 203
+  },
+  {
+    "titre": "Inception",
+    "date_sortie": "2010-07-21T00:00:00.000Z",
+    "genre": "Science-Fiction",
+    "recettes_totales": 836000000,
+    "note_presse": 8.8,
+    "id": 204
+  },
+  {
+    "id": 205
+  },
+  {
+    "id": 206
+  },
+  {
+    "id": 207
+  },
+  {
+    "id": 208
   }
 ]
