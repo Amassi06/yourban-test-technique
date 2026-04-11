@@ -2398,34 +2398,5 @@
     "distributeur": "Gaumont",
     "duree_minutes": 98,
     "note_presse": 4.7
-  },
-  {
-    "id": 201
-  },
-  {
-    "id": 202
-  },
-  {
-    "id": 203
-  },
-  {
-    "titre": "Inception",
-    "date_sortie": "2010-07-21T00:00:00.000Z",
-    "genre": "Science-Fiction",
-    "recettes_totales": 836000000,
-    "note_presse": 8.8,
-    "id": 204
-  },
-  {
-    "id": 205
-  },
-  {
-    "id": 206
-  },
-  {
-    "id": 207
-  },
-  {
-    "id": 208
   }
 ]

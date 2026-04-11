@@ -5,9 +5,9 @@ import Joi from 'joi';
 //j'ai utilisé joi pour avoir un schema a respecter
 export const movieSchema = Joi.object({
     titre: Joi.string().min(1).required(),
-    date_sortie: Joi.string().isoDate().required(),
-    genre: Joi.string().required(),
-    recettes_totales: Joi.number().min(0).required(),
+    date_sortie: Joi.string().required(),
+    genre: Joi.string().optional(),
+    recettes_totales: Joi.number().min(0).optional(),
     nombre_entrees: Joi.number().integer().min(0).optional(),
     pays_origine: Joi.string().optional(),
     distributeur: Joi.string().optional(),

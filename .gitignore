@@ -22,3 +22,5 @@ dist-ssr
 # --- IDE ---
 .DS_Store 
 .vscode/
+
+box-office-200.json/
