@@ -28,7 +28,7 @@ export const getAllMovies = async (_req:Request, res:Response)=>{
 export const createMovie = async(req:Request, res:Response)=>{
    
         if (!req.body || Object.keys(req.body).length === 0) return;
-
+    try{
         const { error, value } = movieSchema.validate(req.body);
         if(error){
             res.status(400).json({
@@ -37,8 +37,8 @@ export const createMovie = async(req:Request, res:Response)=>{
             return;
         }
 
-        const movie = await movieService.createMovie(value)
-        res.status(201).json(movie)
+        const movie = await movieService.createMovie(value);
+        res.status(201).json(movie);
     }catch(error){
         res.status(500).json({message:"Erreur lors de la creation du film"});
     }
