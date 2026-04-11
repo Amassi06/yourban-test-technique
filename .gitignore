@@ -17,7 +17,7 @@ lerna-debug.log*
 
 dist-ssr
 *.local
-
+.~lock.*
 
 # --- IDE ---
 .DS_Store 

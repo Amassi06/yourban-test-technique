@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "API pour le test technique de YourBan ",
-  "main": "dist/index.js",
+  "main": "dist/server.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "build": "tsc",
