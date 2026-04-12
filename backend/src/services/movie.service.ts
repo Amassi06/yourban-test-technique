@@ -31,3 +31,21 @@ export const createMovie = async(movieData:Movie):Promise<Movie>=>{
     return newMovie;
 }
 
+//UPDATE
+export const updateMovie = async (id: number, updateData: Partial<Movie>): Promise<Movie | null> => {
+    const movies = await getMovies();
+    const index = movies.findIndex(m => m.id === id);
+
+    if (index === -1) return null;
+    
+    const updatedMovie: Movie = {
+        ...movies[index],
+        ...updateData,
+        id: id 
+    }as Movie;
+
+    movies[index] = updatedMovie;
+    await fs.writeFile(DATA_PATH, JSON.stringify(movies, null, 2), 'utf-8');
+
+    return updatedMovie;
+};

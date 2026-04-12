@@ -2,7 +2,7 @@ import type {Request, Response } from 'express';
 import * as movieService from '../services/movie.service.js';
 import Joi from 'joi';
 
-//j'ai utilisé joi pour avoir un schema a respecter
+//Utilisation d'un validator JOI pour etre sur que les 3premier argument sont obligatoire
 export const movieSchema = Joi.object({
     titre: Joi.string().min(1).required(),
     date_sortie: Joi.string().required(),
