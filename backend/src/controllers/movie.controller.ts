@@ -43,3 +43,26 @@ export const createMovie = async(req:Request, res:Response)=>{
         res.status(500).json({message:"Erreur lors de la creation du film"});
     }
 };
+
+export const updateMovie = async(req:Request,res:Response)=>{
+    const { id } = req.params;
+    if (!id) {
+        res.status(400).json({ message: "ID manquant" });
+        return;
+    }
+
+    const idNumber = parseInt(id as string, 10);
+
+    if(!req.body || Object.keys(req.body).length===0) return;
+    try{
+            const movie = await movieService.updateMovie(idNumber,req.body);
+            if (!movie) {
+            res.status(404).json({ message: "Film non trouvé" });
+            return;
+        }
+        res.status(200).json(movie);
+
+    }catch(error){
+        res.status(500).json({message:"Erreur lors de la mise à jour du film"})
+    }
+}
