@@ -6,6 +6,6 @@ const router = Router();
 router.post('/',movieController.createMovie);
 router.get('/',movieController.getAllMovies);
 router.patch('/:id', movieController.updateMovie);
-
+router.delete('/:id',movieController.deleteMovie);
 
 export default router;

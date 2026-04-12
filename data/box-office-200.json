@@ -1,29 +1,5 @@
 [
   {
-    "id": 1,
-    "titre": "The Dark Knight Returns",
-    "date_sortie": "2022-01-01",
-    "genre": "Thriller",
-    "recettes_totales": 33590926,
-    "nombre_entrees": 3091121,
-    "pays_origine": "Danemark",
-    "distributeur": "Netflix Films",
-    "duree_minutes": 87,
-    "note_presse": 6.2
-  },
-  {
-    "id": 2,
-    "titre": "Mad Max: Fury Road 2",
-    "date_sortie": "2022-01-13",
-    "genre": "Animation",
-    "recettes_totales": 11116547,
-    "nombre_entrees": 1007487,
-    "pays_origine": "UK",
-    "distributeur": "Gaumont",
-    "duree_minutes": 188,
-    "note_presse": 8.4
-  },
-  {
     "id": 3,
     "titre": "Space Cowboys 2",
     "date_sortie": "2022-01-14",

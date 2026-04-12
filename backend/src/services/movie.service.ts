@@ -49,3 +49,17 @@ export const updateMovie = async (id: number, updateData: Partial<Movie>): Promi
 
     return updatedMovie;
 };
+
+// DELETE
+export const deleteMovie = async (id: number): Promise<boolean> => {
+    const movies = await getMovies();
+    
+    const movieExists = movies.some(m => m.id === id);
+    if (!movieExists) return false;
+
+    const updatedMovies = movies.filter(m => m.id !== id);
+    
+    await fs.writeFile(DATA_PATH, JSON.stringify(updatedMovies, null, 2), 'utf-8');
+    
+    return true;
+};
