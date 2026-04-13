@@ -11,7 +11,6 @@ export const MovieDetail = () => {
   useEffect(() => {
     if (!id) return;
     
-    // Remonte en haut de la page quand on change de film
     window.scrollTo(0, 0);
 
     Promise.all([getMovieById(id), getMovies()])
@@ -64,7 +63,7 @@ export const MovieDetail = () => {
         
         <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-center hover:shadow-md transition-shadow">
           <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Note Presse</p>
-          <p className="text-2xl font-black text-yellow-500">{movie.note_presse} / 5</p>
+          <p className="text-2xl font-black text-yellow-500">{movie.note_presse} / 10</p>
         </div>
         
         <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-center hover:shadow-md transition-shadow">

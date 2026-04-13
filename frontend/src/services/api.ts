@@ -35,7 +35,9 @@ export const createMovie = async (movieData: Omit<Movie, 'id'>): Promise<Movie> 
 
 export const updateMovie = async (id: string | number, movieData: Partial<Movie>): Promise<Movie> => {
   const response = await fetch(`${API_URL}/movies/${id}`, {
-    method: 'PUT', 
+
+    method: 'PATCH', 
+    headers: {
     headers: {
       'Content-Type': 'application/json',
     },
