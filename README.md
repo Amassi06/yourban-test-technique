@@ -10,7 +10,6 @@ Application web full-stack développée dans le cadre du test technique Yourban.
 
 ## Fonctionnalités implémentées
 - [x] **Affichage des films** 
-- [x] **Statistiques dynamiques** 
 - [x] **Filtrage & Tri** 
 - [x] **Détail d'un film** 
 - [x] **CRUD Complet** 
