@@ -1,4 +1,3 @@
-// src/components/MovieCard.tsx
 import { Link } from 'react-router-dom';
 import type { Movie } from '../types/Movie';
 
@@ -22,7 +21,7 @@ export const MovieCard = ({ movie }: MovieCardProps) => {
         </p>
         <p><span className="font-semibold text-gray-700">Sortie:</span> {movie.date_sortie}</p>
         <p><span className="font-semibold text-gray-700">Recettes:</span> {movie.recettes_totales} $</p>
-        <p><span className="font-semibold text-gray-700">Note:</span> <span className="text-yellow-600 font-bold">{movie.note_presse}</span> / 5</p>
+        <p><span className="font-semibold text-gray-700">Note:</span> <span className="text-yellow-600 font-bold">{movie.note_presse}</span> / 10</p>
       </div>
       
       <Link 

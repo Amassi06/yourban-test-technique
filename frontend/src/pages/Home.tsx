@@ -1,4 +1,3 @@
-// src/pages/Home.tsx
 import { useEffect, useState, useMemo } from 'react';
 import { getMovies } from '../services/api';
 import type { Movie } from '../types/Movie';
