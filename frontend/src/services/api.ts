@@ -38,7 +38,6 @@ export const updateMovie = async (id: string | number, movieData: Partial<Movie>
 
     method: 'PATCH', 
     headers: {
-    headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(movieData),
