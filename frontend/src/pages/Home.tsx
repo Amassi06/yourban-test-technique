@@ -24,7 +24,7 @@ export const Home = () => {
   }, []);
 
   const genres = useMemo(() => {
-    const allGenres = movies.map(m => m.genre);
+    const allGenres = movies.map(m => m.genre).filter(g => g && g.trim());
     return Array.from(new Set(allGenres)); 
   }, [movies]);
 
