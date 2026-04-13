@@ -4,7 +4,6 @@ import {Movie} from '../types/Movie.js';
 
 const DATA_PATH = path.join(process.cwd(), 'data/box-office-200.json');
 // CRUD API
-
 // READ
 export const getMovies = async():Promise<Movie[]>=>{
     const data = await fs.readFile(DATA_PATH,'utf-8');
