@@ -1,7 +1,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 import {fileURLToPath} from 'url';
-import {Movie} from '../types/movie.js';
+import type {Movie} from '../types/Movie.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -62,4 +62,11 @@ export const deleteMovie = async (id: number): Promise<boolean> => {
     await fs.writeFile(DATA_PATH, JSON.stringify(updatedMovies, null, 2), 'utf-8');
     
     return true;
+};
+//getMovieById
+export const getMovieById = async (id: number): Promise<Movie | undefined> => {
+  const fileData = await fs.readFile(DATA_PATH, 'utf-8');
+  const movies: Movie[] = JSON.parse(fileData);
+  
+  return movies.find(movie => movie.id === id);
 };

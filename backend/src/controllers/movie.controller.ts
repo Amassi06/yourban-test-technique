@@ -122,3 +122,20 @@ export const deleteMovie = async (req: Request, res: Response): Promise<void> =>
         res.status(500).json({ message: "Erreur serveur lors de la suppression du film." });
     }
 };
+
+export const getMovieById = async (req: Request, res: Response): Promise<void> => {
+  try {
+    const id = parseInt(req.params.id as string, 10);
+    
+    const movie = await movieService.getMovieById(id);
+    
+    if (!movie) {
+      res.status(404).json({ message: "Film introuvable" });
+      return;
+    }
+    
+    res.json(movie);
+  } catch (error) {
+    res.status(500).json({ message: "Erreur serveur" });
+  }
+};
