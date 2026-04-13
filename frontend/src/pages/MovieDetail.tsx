@@ -11,7 +11,6 @@ export const MovieDetail = () => {
   useEffect(() => {
     if (!id) return;
     
-    // Remonte en haut de la page quand on change de film
     window.scrollTo(0, 0);
 
     Promise.all([getMovieById(id), getMovies()])

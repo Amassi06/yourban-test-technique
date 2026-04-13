@@ -23,7 +23,7 @@ export const createMovie = async (movieData: Omit<Movie, 'id'>): Promise<Movie> 
   const response = await fetch(`${API_URL}/movies`, {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json', // Indispensable pour l'envoi de données
+      'Content-Type': 'application/json', 
     },
     body: JSON.stringify(movieData),
   });
@@ -35,7 +35,7 @@ export const createMovie = async (movieData: Omit<Movie, 'id'>): Promise<Movie> 
 
 export const updateMovie = async (id: string | number, movieData: Partial<Movie>): Promise<Movie> => {
   const response = await fetch(`${API_URL}/movies/${id}`, {
-    method: 'PUT', // Utilise 'PATCH' si ton backend est configuré ainsi
+    method: 'PATCH', 
     headers: {
       'Content-Type': 'application/json',
     },
