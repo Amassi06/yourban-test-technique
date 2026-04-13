@@ -18,11 +18,10 @@ Application web full-stack développée dans le cadre du test technique Yourban.
 ### Installation des dépendances
 
 ```bash
-cd backend
-npm install
-npm run dev
+npm install && npm run dev
 
 # Installation Frontend
-cd frontend
-npm install
-npm run dev
+npm install &&npm run dev
+```
+![Interface principale](https://i.imgur.com/EK6dEic.png)
+![Interface principale](https://i.imgur.com/UafLyiP.png)
